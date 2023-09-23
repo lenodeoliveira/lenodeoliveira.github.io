@@ -7,27 +7,126 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/service-tools-icon.svg" type="image/x-icon">
     <title>J. Lennon Silva de Oliveira</title>
 </head>
 <body>
-    <main class="container">
+    <main>
        <header class="header-site">
            <div class="navbar">
-               <h1>Lennon Oliveira</h1>
                <nav>
                    <ul>
-                       <li><a href="index.html">Página Inicial</a></li>
-                       <li><a href="sobre.html">Sobre</a></li>
-                       <li><a href="contato.html">Contato</a></li>
+                       <li><a href="#skils">About</a></li>
+                       <li><a href="#skills">Skills</a></li>
+                       <li><a href="#contact">Contact</a></li>
                    </ul>
                </nav>
            </div>
        </header>
 
+       <div class="container-gif">
+        <img class="gif" src="./assets/progress.gif" alt="Computer man">
+       </div>
+
+       <div class="container-abou-me">
+            <section class="container-bio">
+                <p class="bio">
+                    Hello! My name is John. I have a degree in Internet Systems.
+                    I currently work as a software engineer building an incredible product that gives thousands 
+                    of people the possibility of studying without leaving their homes.
+                    I have participated in several projects such as front-end, back-end and dev ops.
+                </p>
+            </section>
+       </div>
+       <div class="my-skills" id="skills">
+            <!-- <div class="my-skills-content"> -->
+                <div class="skills">
+                    <div class="container-back-end">
+                        <img class="back-end-img" src="./assets/cmd-terminal-icon.svg" alt="CMD image">
+                    </div>
+                    <div class="skills-info">
+                        <h2 style="padding-bottom: 21px;">
+                            As a back-end I had the opportunity to create several functionalities in REST APIs.
+                        </h2>
+                        <span class="title-tech">Technologies:</span>
+                        <div class="tools">
+                            <p>Node.JS</p>
+                            <p>Javascript, Typescript, Go</p>
+                            <p>Nest.JS</p>
+                            <p>gRPC</p>
+                            <p>Amazon Web Services</p>
+                            <p>Jest, Mocha</p>
+                            <p>Lambda Functions</p>
+                            <p>Mysql</p>
+                            <p>Postgresql</p>
+                            <p>MongoDB</p>
+                            <p>Git</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="skills">
+                    <div class="container-front-end">
+                        <img class="front-end-img" src="./assets/computer.png" alt="Screen">
+                    </div>
+                    <div class="skills-info">
+                        <h2 style="padding-bottom: 10px;">
+                            As a front-end I had the opportunity to work on several projects with super challenging layouts.
+                        </h2>
+                        <span class="title-tech">Technologies:</span>
+                        <div class="tools">
+                            <p>React.js</p>
+                            <p>Next.js</p>
+                            <p>Javascript</p>
+                            <p>Typescript</p>
+                            <p>CSS3</p>
+                            <p>HTML5</p>
+                            <p>Git</p>
+                            <p>Sass</p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="skills">
+                    <div class="container-infra">
+                        <img class="infra-img" src="./assets/devops.png" alt="Gear Symbol">
+                    </div>
+                    <div class="skills-info">
+                        <h2 style="padding-bottom: 28px;">
+                            How Dev Ops builds diverse features to improve software delivery
+                        </h2>
+                        <span class="title-tech">Technologies:</span>
+                        <div class="tools">
+                            <p>Circle CI</p>
+                            <p>Gitlab CI</p>
+                            <p>Kubernetes</p>
+                            <p>New Relic</p>
+                            <p>Cloud Watch</p>
+                            <p>Integration continues</p>
+                            <p>Delivery continues</p>
+                        </div>
+                    </div>
+
+                </div>
+            <!-- </div> -->
+       </div>
+       
+
    </main>
 
     
-    
+   <footer class="contact" id="contact">
+        <p>&copy; 2023 By John ❤️</p>
+            <a class="link-icons" target="_blank" href="https://github.com/lenodeoliveira">
+                <img class="icons" src="./assets/github.png" alt="Icon gitHub">
+            </a>
+            <a class="link-icons" target="_blank" href="https://www.linkedin.com/in/johnlennondeoliveira/">
+                <img class="icons" src="./assets/linkedin.png" alt="Icon linkedin">
+            </a>
+    </footer>
      
    <script src="./index.js"></script>
 </body>
