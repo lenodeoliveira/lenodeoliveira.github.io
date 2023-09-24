@@ -184,11 +184,43 @@ li:hover, .active {
 
 
 
-
-/* @media screen and (min-width: 368px) {
-    .container-gif {
-        display: flex;
-        justify-content: center;
-        padding-top: 12%;
+@media screen and (max-device-width: 414px)  {
+    .bio {
+        text-align: justify;
+        font-size: 0.9rem;
+        line-height: 0.9rem;
     }
-} */
+    
+     .my-skills {
+        display: block;
+        height: 100%;
+    }
+
+    .skills {
+        margin: 8px 40px;
+    }
+
+    .container-gif {
+        padding-top: 33%;
+    }
+    .container-bio {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 820px) and (max-width: 1180px) {
+	 .container-gif {
+        padding-top: 16%;
+    }
+}
+
+
+@media screen and (max-width: 1653px) and (max-height: 658px) {
+    .container-gif {
+        padding-top: 10%;
+    }
+
+    .container-bio {
+        width: 80%;
+    }
+}
