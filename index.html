@@ -3,150 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="John Lennon — Software Engineer. Cloud Architecture, AWS, Distributed Systems.">
+    <meta name="description" content="">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="icon" href="./assets/cmd-terminal-icon.svg" type="image/svg+xml">
-    <title>john@portfolio ~ whoami</title>
+    <title></title>
 </head>
 <body>
     <div class="scanlines" aria-hidden="true"></div>
-
-    <header class="top-bar">
-        <nav class="nav-commands" aria-label="Site navigation">
-            <a href="#whoami" class="nav-cmd" data-cmd="whoami">whoami</a>
-            <a href="#focus" class="nav-cmd" data-cmd="current_focus">focus</a>
-            <a href="#experience" class="nav-cmd" data-cmd="experience">experience</a>
-            <a href="#technologies" class="nav-cmd" data-cmd="technologies">tech</a>
-            <a href="#projects" class="nav-cmd" data-cmd="projects">projects</a>
-            <a href="#certifications" class="nav-cmd" data-cmd="certifications">certs</a>
-            <a href="#contact" class="nav-cmd" data-cmd="contact">contact</a>
-        </nav>
-    </header>
-
-    <main class="page">
-        <div class="terminal-window">
-            <div class="terminal-titlebar">
-                <div class="window-controls">
-                    <span class="control control-close"></span>
-                    <span class="control control-minimize"></span>
-                    <span class="control control-maximize"></span>
-                </div>
-                <span class="window-title">john@portfolio: ~/dev</span>
-                <span class="window-status">● online</span>
-            </div>
-
-            <div class="terminal-body">
-                <p class="boot-line" id="boot-line"></p>
-
-                <section class="cmd-block" id="whoami">
-                    <p class="cmd-prompt"><span class="prompt">&gt;</span> <span class="cmd-name">whoami</span></p>
-                    <div class="cmd-output">
-                        <h1 class="name">John Lennon</h1>
-                        <p class="role">Software Engineer</p>
-                        <p class="tagline">Building scalable systems in the cloud.</p>
-                    </div>
-                </section>
-
-                <section class="cmd-block" id="focus">
-                    <p class="cmd-prompt"><span class="prompt">&gt;</span> <span class="cmd-name">current_focus</span></p>
-                    <ul class="cmd-output list-output">
-                        <li>Cloud Architecture</li>
-                        <li>AWS</li>
-                        <li>Distributed Systems</li>
-                        <li>AI Engineering</li>
-                    </ul>
-                </section>
-
-                <section class="cmd-block" id="experience">
-                    <p class="cmd-prompt"><span class="prompt">&gt;</span> <span class="cmd-name">experience</span></p>
-                    <p class="cmd-output">6+ years building software.</p>
-                </section>
-
-                <section class="cmd-block" id="technologies">
-                    <p class="cmd-prompt"><span class="prompt">&gt;</span> <span class="cmd-name">technologies</span></p>
-                    <div class="cmd-output tech-grid">
-                        <span class="tech-tag">TypeScript</span>
-                        <span class="tech-tag">NestJS</span>
-                        <span class="tech-tag">AWS</span>
-                        <span class="tech-tag">MySQL</span>
-                        <span class="tech-tag">Docker</span>
-                        <span class="tech-tag">Microservices</span>
-                    </div>
-                </section>
-
-                <section class="cmd-block" id="projects">
-                    <p class="cmd-prompt"><span class="prompt">&gt;</span> <span class="cmd-name">projects</span></p>
-                    <ul class="cmd-output project-list">
-                        <li>
-                            <a href="https://github.com/lenodeoliveira/corvo-zap" target="_blank" rel="noopener noreferrer" class="project-name">Corvo-Zap</a>
-                            <span class="project-desc">// crow messenger app — send corvos to chat with friends</span>
-                        </li>
-                        <li>
-                            <span class="project-name">NestJS Logs</span>
-                            <span class="project-desc">// structured logging toolkit</span>
-                        </li>
-                        <li>
-                            <a href="https://github.com/lenodeoliveira/my_cms_blog" target="_blank" rel="noopener noreferrer" class="project-name">CMS</a>
-                            <span class="project-desc">// content management system with Docker</span>
-                        </li>
-                    </ul>
-                </section>
-
-                <section class="cmd-block" id="certifications">
-                    <p class="cmd-prompt"><span class="prompt">&gt;</span> <span class="cmd-name">certifications</span></p>
-                    <p class="cmd-output cert-line">
-                        <span class="cert-badge">AWS</span>
-                        Solutions Architect Associate
-                        <span class="status-pill">in progress</span>
-                    </p>
-                </section>
-
-                <section class="cmd-block" id="contact">
-                    <p class="cmd-prompt"><span class="prompt">&gt;</span> <span class="cmd-name">contact</span></p>
-                    <div class="cmd-output contact-links">
-                        <a href="https://github.com/lenodeoliveira" target="_blank" rel="noopener noreferrer" class="contact-link">
-                            <span class="link-prefix">$</span> GitHub
-                        </a>
-                        <a href="https://www.linkedin.com/in/johnlennondeoliveira/" target="_blank" rel="noopener noreferrer" class="contact-link">
-                            <span class="link-prefix">$</span> LinkedIn
-                        </a>
-                        <a href="mailto:lenodeoliveira@gmail.com" class="contact-link">
-                            <span class="link-prefix">$</span> Email
-                        </a>
-                    </div>
-                </section>
-
-                <div class="interactive-terminal" id="interactive-terminal">
-                    <p class="cmd-prompt interactive-label">
-                        <span class="prompt">&gt;</span> <span class="cmd-name">shell</span>
-                        <span class="hint">// type a command or press Tab</span>
-                    </p>
-                    <div class="terminal-history" id="terminal-history" aria-live="polite"></div>
-                    <form class="input-line" id="terminal-form" autocomplete="off">
-                        <label for="terminal-input" class="sr-only">Terminal input</label>
-                        <span class="input-prompt">guest@portfolio:~$</span>
-                        <input
-                            type="text"
-                            id="terminal-input"
-                            spellcheck="false"
-                            autocapitalize="off"
-                            autocomplete="off"
-                            aria-label="Terminal command input"
-                        >
-                        <span class="cursor" id="cursor" aria-hidden="true">█</span>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <footer class="footer">
-        <p><span class="prompt">&gt;</span> exit 0 — &copy; <span id="year"></span> John Lennon</p>
-    </footer>
-
-    <script src="./index.js"></script>
+    <div id="app"></div>
+    <script type="module" src="./js/main.js"></script>
 </body>
 </html>
