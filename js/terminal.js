@@ -42,8 +42,11 @@ function buildCommands() {
 
         certifications: () =>
             certifications
-                .map(({ badge, name, status }) => `[${badge}] ${name} (${status})`)
-                .join('\n'),
+                .map(({ badge, name, status, credlyUrl }) => {
+                    const line = `[${badge}] ${name} (${status})`;
+                    return credlyUrl ? `${line}\n  → ${credlyUrl}` : line;
+                })
+                .join('\n\n'),
 
         contact: () => contactOutput,
 

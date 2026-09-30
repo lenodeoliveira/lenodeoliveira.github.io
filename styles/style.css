@@ -328,6 +328,39 @@ a.project-name:focus-visible {
 
 /* ── Certifications ── */
 
+.cert-list {
+    padding-left: 1.25rem;
+}
+
+.cert-entry {
+    margin-bottom: 1.25rem;
+}
+
+.cert-entry:last-child {
+    margin-bottom: 0;
+}
+
+.credly-badge-link {
+    display: inline-block;
+    margin-bottom: 0.65rem;
+    border-radius: 4px;
+    transition: var(--transition);
+}
+
+.credly-badge-link:hover,
+.credly-badge-link:focus-visible {
+    outline: none;
+    transform: translateY(-2px);
+    filter: drop-shadow(0 4px 16px rgba(57, 186, 230, 0.25));
+}
+
+.credly-badge-img {
+    display: block;
+    width: 120px;
+    height: auto;
+    border-radius: 4px;
+}
+
 .cert-line {
     display: flex;
     flex-wrap: wrap;

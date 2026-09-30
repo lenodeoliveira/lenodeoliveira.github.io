@@ -60,7 +60,7 @@
 </tr>
 <tr>
 <td style="padding:0 24px 6px 0; color:#b3c5d9;">AWS Solutions Architect Associate</td>
-<td style="padding:0 0 6px 0; color:#7fd962;"><code style="background:#151b24; padding:2px 6px; border-radius:3px; color:#7fd962;">█████░░░░░</code> <span style="color:#5c6b7f">50%</span></td>
+<td style="padding:0 0 6px 0; color:#7fd962;"><code style="background:#151b24; padding:2px 6px; border-radius:3px; color:#7fd962;">██████████</code> <span style="color:#5c6b7f">100%</span></td>
 </tr>
 <tr>
 <td style="padding:0 24px 6px 0; color:#b3c5d9;">AI Engineering</td>
@@ -101,9 +101,14 @@
 
 <p style="margin:0 0 10px;"><span style="color:#7fd962">></span> <span style="color:#39bae6">certifications</span></p>
 <p style="margin:0 0 8px; padding-left:20px;">
+<a href="https://www.credly.com/badges/95df2635-d220-4d8c-b7aa-526de1568cec/public_url">
+<img src="https://images.credly.com/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png" alt="AWS Certified Solutions Architect Associate" width="120" />
+</a>
+</p>
+<p style="margin:0 0 8px; padding-left:20px;">
 <span style="background:#ff9900; color:#0a0e14; padding:2px 7px; border-radius:3px; font-size:11px; font-weight:700;">AWS</span>&nbsp;
-<span style="color:#b3c5d9;">Solutions Architect Associate</span>&nbsp;
-<span style="border:1px solid #7fd962; color:#7fd962; padding:2px 8px; border-radius:99px; font-size:11px;">in progress</span>
+<span style="color:#b3c5d9;">Solutions Architect – Associate</span>&nbsp;
+<span style="border:1px solid #7fd962; color:#7fd962; padding:2px 8px; border-radius:99px; font-size:11px;">verified</span>
 </p>
 <p style="margin:0 0 8px; padding-left:20px;">
 <span style="background:#ff9900; color:#0a0e14; padding:2px 7px; border-radius:3px; font-size:11px; font-weight:700;">AWS</span>&nbsp;
