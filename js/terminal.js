@@ -1,8 +1,18 @@
 import { portfolio } from '../data/portfolio.js';
 
+function formatVerifiedCert() {
+    const cert = portfolio.certifications.find(({ status }) => status === 'verified');
+    if (!cert) return null;
+
+    const label = cert.shortLabel ? `${cert.badge} ${cert.shortLabel}` : `${cert.badge} ${cert.name}`;
+    return { label, name: cert.name, credlyUrl: cert.credlyUrl };
+}
+
 function buildCommands() {
     const { whoami, focus, experience, technologies, projects, certifications, contact } =
         portfolio;
+
+    const verifiedCert = formatVerifiedCert();
 
     const projectsOutput = projects
         .map(({ name, url, description }) => {
@@ -29,8 +39,17 @@ function buildCommands() {
   date            — current timestamp
   neofetch        — system info (just for fun)`,
 
-        whoami: () =>
-            `${whoami.name}\n${whoami.role}\n${whoami.tagline}`,
+        whoami: () => {
+            const lines = [whoami.name, whoami.role, whoami.tagline];
+            if (verifiedCert) {
+                lines.push(
+                    '',
+                    `[${verifiedCert.label}] ${verifiedCert.name} (verified)`,
+                    `→ ${verifiedCert.credlyUrl}`
+                );
+            }
+            return lines.join('\n');
+        },
 
         current_focus: () => focus.map((item) => `- ${item}`).join('\n'),
 
@@ -54,8 +73,12 @@ function buildCommands() {
 
         date: () => new Date().toString(),
 
-        neofetch: () =>
-            `     ██╗ ██████╗ ██╗  ██╗███╗   ██╗
+        neofetch: () => {
+            const certLine = verifiedCert
+                ? `Cert:   ${verifiedCert.label} — ${verifiedCert.name}`
+                : 'Cert:   —';
+
+            return `     ██╗ ██████╗ ██╗  ██╗███╗   ██╗
      ██║██╔═══██╗██║  ██║████╗  ██║
      ██║██║   ██║███████║██╔██╗ ██║
 ██   ██║██║   ██║██╔══██║██║╚██╗██║
@@ -67,7 +90,9 @@ Host:   john@cloud
 Kernel: NestJS 10.x / Node.js
 Uptime: 6+ years
 Shell:  geek-mode
-Theme:  dracula-terminal`,
+${certLine}
+Theme:  dracula-terminal`;
+        },
     };
 }
 

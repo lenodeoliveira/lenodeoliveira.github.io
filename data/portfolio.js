@@ -65,6 +65,7 @@ export const portfolio = {
     certifications: [
         {
             badge: 'AWS',
+            shortLabel: 'SAA',
             name: 'Solutions Architect – Associate',
             status: 'verified',
             credlyUrl:

@@ -245,6 +245,30 @@ body {
     font-size: 0.85rem;
 }
 
+.whoami-cert {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem 0 0;
+}
+
+.whoami-cert-link {
+    color: var(--accent-orange);
+    font-weight: 500;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.whoami-cert-link:hover,
+.whoami-cert-link:focus-visible {
+    color: var(--accent);
+    outline: none;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
 /* ── Lists ── */
 
 .list-output {

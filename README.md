@@ -21,7 +21,12 @@
 <p style="margin:0 0 6px;"><span style="color:#7fd962">></span> <span style="color:#39bae6">whoami</span></p>
 <p style="margin:0 0 4px; padding-left:20px; color:#e6edf3; font-size:22px; font-weight:700;">John Lennon Oliveira</p>
 <p style="margin:0 0 4px; padding-left:20px; color:#39bae6; font-size:16px;">Software Engineer</p>
-<p style="margin:0 0 20px; padding-left:20px; color:#5c6b7f; font-size:13px;">6+ years building scalable software and cloud solutions.</p>
+<p style="margin:0 0 8px; padding-left:20px; color:#5c6b7f; font-size:13px;">6+ years building scalable software and cloud solutions.</p>
+<p style="margin:0 0 20px; padding-left:20px;">
+<span style="background:#ff9900; color:#0a0e14; padding:2px 7px; border-radius:3px; font-size:11px; font-weight:700;">AWS</span>&nbsp;
+<a href="https://www.credly.com/badges/95df2635-d220-4d8c-b7aa-526de1568cec/public_url" style="color:#ff8f40; font-size:13px; text-decoration:none; font-weight:500;">Solutions Architect – Associate</a>&nbsp;
+<span style="border:1px solid #7fd962; color:#7fd962; padding:2px 8px; border-radius:99px; font-size:11px;">verified</span>
+</p>
 <p style="margin:0 0 6px; padding-left:20px; color:#b3c5d9;">Specialized in:</p>
 <p style="margin:0 0 2px; padding-left:36px; color:#b3c5d9;"><span style="color:#7fd962">-</span> Backend Engineering</p>
 <p style="margin:0 0 2px; padding-left:36px; color:#b3c5d9;"><span style="color:#7fd962">-</span> Cloud Architecture</p>
